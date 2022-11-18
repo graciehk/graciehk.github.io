@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rainy Mountain Road</title>
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <!-- jquery.min.js should be loaded before bootstrap.min.js because bootstrap's JavaScript requires jQueary -->
+  <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/JavaScript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Economica:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="nav-bar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    #nav-bar-logo {
+      padding: 0;
+    }
+    .carousel-area {
+      padding: 0 50px;
+      background-color: transparent;
+    }
+    #myCarousel {
+      height: 75vh;
+      max-width: 1000px;
+    }
+    .carousel-inner > .item {
+      height: 75vh;
+    }
+    .item > img {
+      max-width: 1000px !important;
+      height:100% !important;
+    }
+    #scrollable-text {
+      max-width: 30%;
+    }
+    #scrollable-text > p {
+      max-height: 75vh;
+      overflow-y: scroll;
+      font-size: 18px;
+    }
+    #carousel-page-wrapper {
+      display: flex;
+      flex-direction: row;
+      padding-right: 50px;
+    }
+    #photos-heading {
+      margin-top: 50px;
+      margin-left: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <video autoplay muted loop id="myVideo" width="1920" height="1080">
+            <source src="RainyRoad.mp4" type="video/mp4">
+        </video> -->
+  <div class="content">
+    <div id="nav-bar">
+      <a href="/">
+        <img id="nav-bar-logo" alt="Home" src="./NatureLogo.jpg"></img>
+      </a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="hikes.html">Hikes</a>
+      <a href="videos.html">Videos</a>
+      <a href="photographs.html">Photographs</a>
+    </div>
+    <div id="page">
+      <h1 id="photos-heading">Photographs</h1>
+      <div id="carousel-page-wrapper">
+      <div class="carousel-area">
+        
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="./BigSur1.jpg" alt="Mountains" />
+              <div class="carousel-caption">
+                <h3>McWay Falls</h3>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="./PartingtonCove2020.jpg" alt="Coast"  />
+              <div class="carousel-caption">
+                <h3>Big Sur</h3>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="./BixbyBridge2019.jpg" alt="Coast"  />
+              <div class="carousel-caption">
+                <h3>Bixby Bridge</h3>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="./PointLobos.jpg" alt="Coast"  />
+              <div class="carousel-caption">
+                <h3>Point Lobos</h3>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="./Limekiln.JPG" alt="Coast"  />
+              <div class="carousel-caption">
+                <h3>Limekiln State Park</h3>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="./SeaRanch(ACR).jpg" alt="Coast"  />
+              <div class="carousel-caption">
+                <h3>Sea Ranch</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div id="scrollable-text">
+        <p>'McWay Falls is a beautiful and remarkable waterfall dropping into an untouched cove on the California coast. McWay Falls is the star of Julia Pfeiffer Burns State Park in Big Sur. The way McWay Falls drops to the beach, it looks like paradise. In years past, the 80-foot waterfall landed right in the ocean. A 1983 landslide deposited sand at the base of the waterfall and created the sandy cove seen today beside McWay Falls. Now McWay Falls only kisses the ocean when high tide waves roll ashore. Because it is capable of spilling right into the ocean, McWay Falls can be categorized as a "tidefalls," making it a rare attraction.'
+            'Bixby Creek Bridge, also known as Bixby Canyon Bridge, on the Big Sur coast of California, is one of the most photographed bridges in California due to its aesthetic design, "graceful architecture and magnificent setting". It is a reinforced concrete open-spandrel arch bridge. The bridge is 120 miles (190 km) south of San Francisco and 13 miles (21 km) south of Carmel in Monterey County on State Route 1.'
+            'Point Lobos and the Point Lobos State Natural Reserve is a state park in California. Adjoining Point Lobos is "one of the richest marine habitats in California." The ocean habitat is protected by two marine protected areas, the Point Lobos State Marine Reserve and Point Lobos State Marine Conservation Area. The sea near Point Lobos is considered one of the best locations for scuba diving on the Monterey Peninsula and along the California coast.'
+            'Limekiln State Park is a California state park on the Big Sur coast. It contains four lime kilns from an 1887–1890 lime-calcining operation, plus a beach, redwood forest, and 100-foot (30 m) Limekiln Falls. It is located 2 miles (3.2 km) south of Lucia on Big Sur Coast Highway. The 711-acre (288 ha) park was established in 1994.'
+            'Sea Ranch is an unincorporated community in Sonoma County, California, United States that was developed as planned community beginning in the 1960s. It is known for its distinctive timber-frame structures designed by several noted American architects. The first unit built at Sea Ranch, Condominium 1, was placed on the National Register of Historic Places in 2005. The community's development played a role in the establishment of the California Coastal Commission. The population was 1,305 at the 2010 census. For statistical purposes, the United States Census Bureau has defined Sea Ranch as a census-designated place (CDP).'
+            - Wikipedia
+          </p>
+      </div>
+    </div>
+    <div id="footer">
+      <h4>Contact Information</h4>
+      <a class="footer-link" href="https://twitter.com">
+          <i class="fa fa-twitter"></i>
+      </a>
+      <a class="footer-link" href="https://github.com">
+          <i class="fa fa-github"></i>
+      </a>
+      <a class="footer-link" href="https://linkedin.com">
+          <i class="fa fa-linkedin"></i>
+      </a>
+      <a class="footer-link" href="https://pinterest.com">
+          <i class="fa fa-pinterest"></i>
+      </a>
+  </div>
+    </div>
+  </div>
+</body>
+
+
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rainy Mountain Road</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="lightbox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/JavaScript" src="lightbox-plus-jquery.min.js"></script>
+    <style>
+        .photographs-row {
+            height: 30vh;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .photographs-item {
+            width: 21vw;
+            text-align: center;
+        }
+
+        .photographs-item>img {
+            max-width: 21vw;
+            max-height: 35vh;
+        }
+
+        #photographs-wrapper {
+            padding: 0 50px;
+            margin-bottom: 50px;
+        }
+
+        #page {
+            overflow-y: scroll !important;
+            margin-bottom: 50px;
+        }
+        #title {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <video autoplay muted loop id="myVideo" width="1920" height="1080">
+        <source src="RainyRoad.mp4" type="video/mp4">
+    </video> --> -->
+    <div class="content">
+        <div id="nav-bar">
+            <a href="/">
+                <img id="nav-bar-logo" alt="Home" src="./NatureLogo.jpg"></img>
+            </a>
+            <a href="contact.html">Contact</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="hikes.html">Hikes</a>
+            <a href="videos.html">Videos</a>
+            <a href="photographs.html">Photographs</a>
+        </div>
+        <div id="page">
+            <h1 id="title">Photographs</h1>
+            <div id="photographs-wrapper">
+                <div class="photographs-row">
+                    <a href="CampSaturna.JPG" data-lightbox="photo" data-title="Silver Lake" class="photographs-item">
+                        <img src="CampSaturna.JPG" alt="Silver Lake">
+                    </a>
+                    <a href="BellinghamWA.JPG" data-lightbox="photo" data-title="Maple Point" class="photographs-item">
+                        <img src="BellinghamWA.JPG" alt="Maple Point">
+                    </a>
+                    <a href="BigSur2018.JPG" data-lightbox="photo" data-title="Big Sur" class="photographs-item">
+                        <img src="BigSur2018.JPG" alt="Big Sur">
+                    </a>
+                    <a href="Monterey.JPG" data-lightbox="photo" data-title="Monterey Canary Row" class="photographs-item">
+                        <img src="Monterey.JPG" alt="Monterey Canary Row">
+                    </a>
+                </div>
+                <div class="photographs-row">
+                    <a href="CypressGrove.JPG" data-lightbox="photo" data-title="Cypress Grove" class="photographs-item">
+                        <img src="CypressGrove.JPG" alt="Cypress Grove">
+                    </a>
+                    <a href="GlenEllen.JPG" data-lightbox="photo" data-title="Glen Ellen" class="photographs-item">
+                        <img src="GlenEllen.JPG" alt="Glen Ellen">
+                    </a>
+                    <a href="HowarthPark.JPG" data-lightbox="photo" data-title="Howarth Park" class="photographs-item">
+                        <img src="HowarthPark.JPG" alt="Howarth Park">
+                    </a>
+                    <a href="GuernevilleRR.JPG" data-lightbox="photo" data-title="Russian River" class="photographs-item">
+                        <img src="GuernevilleRR.JPG" alt="Russian River">
+                    </a>
+                </div>
+                <div class="photographs-row">
+                    <a href="Stinson2022.jpg" data-lightbox="photo" data-title="Stinson Beach" class="photographs-item">
+                        <img src="Stinson2022.jpg" alt="Stinson Beach">
+                    </a>
+                    <a href="PigeonPointLH.JPG" data-lightbox="photo" data-title="Pigeon Point Lighthouse" class="photographs-item">
+                        <img src="PigeonPointLH.JPG" alt="Pigeon Point Light House">
+                    </a>
+                    <a href="Bay.JPG" data-lightbox="photo" data-title="Mount Tamalpais, San Francisco Bay" class="photographs-item">
+                        <img src="Bay.JPG" alt="Mount Tamalpais, San Francisco Bay">
+                    </a>
+                    <a href="DillonBeach.JPG" data-lightbox="photo" data-title="Dillon Beach Sunrise" class="photographs-item">
+                        <img src="DillonBeach.JPG" alt="Dillon Beach Sunrise">
+                    </a>
+                </div>
+                <div class="photographs-row">
+                    <a href="Warwick.JPG" data-lightbox="photo" data-title="Seattle" class="photographs-item">
+                        <img src="Warwick.JPG" alt="Seattle">
+                    </a>
+                    <a href="Seattle.JPG" data-lightbox="photo" data-title="Warwick" class="photographs-item">
+                        <img src="Seattle.JPG" alt="Warwick, Seattle">
+                    </a>
+                    <a href="Lighttrails.JPG" data-lightbox="photo" data-title="Light trails on the San Francisco Bay" class="photographs-item">
+                        <img src="Lighttrails.JPG" alt="Light trails on the San Francisco Bay">
+                    </a>
+                    <a href="Manhattan.jpg" data-lightbox="photo" data-title="SoHo Buildings, Manhattan" class="photographs-item">
+                        <img src="Manhattan.jpg" alt="SoHo Buildings, Manhattan">
+                    </a>
+                </div>
+                <div class="photographs-row">
+                    <a href="Cornerstone.JPG" data-lightbox="photo" data-title="Cornerstone Berkeley" class="photographs-item">
+                        <img src="Cornerstone.JPG" alt="Cornerstone Berkeley">
+                    </a>
+                    <a href="Downtown.jpg" data-lightbox="photo" data-title="Downtown Manhattan" class="photographs-item">
+                        <img src="Downtown.jpg" alt="Downtown Manhattan">
+                    </a>
+                    <a href="Jellyfish.JPG" data-lightbox="photo" data-title="Jellyfish" class="photographs-item">
+                        <img src="Jellyfish.JPG" alt="Jellyfish">
+                    </a>
+                    <a href="Bees.JPG" data-lightbox="photo" data-title="Bees" class="photographs-item">
+                        <img src="Bees.JPG" alt="Bernal Bees">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <h4>Contact Information</h4>
+            <a class="footer-link" href="https://twitter.com">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a class="footer-link" href="https://github.com">
+                <i class="fa fa-github"></i>
+            </a>
+            <a class="footer-link" href="https://linkedin.com">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a class="footer-link" href="https://pinterest.com">
+                <i class="fa fa-pinterest"></i>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+ /*#myVideo {
+                width: 100vw; 
+                height: 100vh; 
+            }*/
+ /* Style the video: 100% width and height to cover the entire window */
+ #myVideo {
+     object-fit: cover;
+     position: fixed;
+     right: 0;
+     bottom: 0;
+     min-width: 100%;
+     min-height: 100%;
+ }
+
+ /* Add some content at the bottom of the video/page */
+ .content {
+     position: fixed;
+     bottom: 0;
+     background: transparent;
+     color: #101010;
+     height: 100%;
+     width: 100%;
+     padding: 0px;
+     overflow-y: scroll;
+     overflow-x: hidden;
+     max-width: 100vw;
+ }
+
+ #page {
+     height: 100%;
+     width: 100vw;
+}
+
+ body {
+     margin: 0px;
+     font-family: 'Economica', sans-serif; /* !important to make scrollable text this font*/
+ }
+
+ #footer {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefefe;
+ }
+ .footer-link {
+    margin-left: 10px;
+ }

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rainy Mountain Road</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Economica:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        #hikes-table {
+            width: 100%;
+            text-align: left;
+        }
+        #table-wrapper {
+            width: 60vw; 
+        }
+        #page {
+            padding: 50px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px 0 5px 5px;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <!-- <video autoplay muted loop id="myVideo" width="1920" height="1080">
+        <source src="RainyRoad.mp4" type="video/mp4">
+    </video> -->
+    <div class="content">
+        <div id="nav-bar">
+            <a href="/">
+                <img id="nav-bar-logo" alt="Home" src="./NatureLogo.jpg"></img>
+            </a>
+            <a href="contact.html">Contact</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="hikes.html">Hikes</a>
+            <a href="videos.html">Videos</a>
+            <a href="photographs.html">Photographs</a>
+        </div>
+        <div id="page">
+            <div id="table-wrapper">
+                <table id="hikes-table">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Location</th>
+                        <th>Distance</th>
+                        <th>Estimated Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ridge Loop</td>
+                        <td>Santa Rosa CA</td>
+                        <td>2.4 Mi.</td>
+                        <td>1.6 Hrs.</td>
+                    </tr>
+                    <tr>
+                        <td>Lake Loop</td>
+                        <td>Santa Rosa CA</td>
+                        <td>1.2 Mi.</td>
+                        <td>55 Min</td>
+                    </tr>
+                    <tr>
+                        <td>Coastal Trail</td>
+                        <td>Bodega Bay CA</td>
+                        <td>4.5 Mi.</td>
+                        <td>3.2 Hrs.</td>
+                    </tr>
+                    <tr>
+                        <td>Redwood Grove Trail</td>
+                        <td>Jenner CA</td>
+                        <td>3 Mi.</td>
+                        <td>2.4 Hrs.</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="footer">
+            <h4>Contact Information</h4>
+            <a class="footer-link" href="https://twitter.com">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a class="footer-link" href="https://github.com">
+                <i class="fa fa-github"></i>
+            </a>
+            <a class="footer-link" href="https://linkedin.com">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a class="footer-link" href="https://pinterest.com">
+                <i class="fa fa-pinterest"></i>
+            </a>
+        </div>
+    </div>
+    <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+  <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/JavaScript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+  <!-- BEG JavaScript -->
+  <script>
+    $(document).ready(function () {
+      $("table#hikes-table").tablesorter();
+    });
+  </script>
+  <!-- END JavaScript -->
+</body>
+
+</html>
